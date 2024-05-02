@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -13,6 +13,6 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="set WixBinPath=C:\Program Files (x86)\WiX Toolset v3.14\bin  &#xD;&#xA;&quot;%25WixBinPath%25\heat.exe&quot; dir $(TargetDir) -dr INSTALLFOLDER -cg ProductComponents -var var.FileDeletionRecordServiceOutPutPath -out $(TargetDir)heat.wxs -gg -gl -sf -srd" />
+    <Exec Command="set WixBinPath=C:\Program Files (x86)\WiX Toolset v3.14\bin  &#xD;&#xA;&quot;%25WixBinPath%25\heat.exe&quot; dir $(TargetDir) -dr INSTALLFOLDER -cg ProductComponents -var var.FileDeletionRecordServiceOutPutPath -out $(SolutionDir)\FileDeletionRecordServiceSetup\heat_result.wxs -gg -gl -sf -srd" />
   </Target>
 </Project>
