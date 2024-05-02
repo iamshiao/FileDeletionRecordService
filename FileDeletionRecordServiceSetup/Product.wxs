@@ -9,6 +9,11 @@
     <Feature Id="ProductFeature" Title="FileDeletionRecordServiceSetup" Level="1">
       <ComponentGroupRef Id="ProductComponents" />
     </Feature>
+
+    <UI>
+      <UIRef Id="WixUI_InstallDir" />
+    </UI>
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
   </Product>
 
   <Fragment>
