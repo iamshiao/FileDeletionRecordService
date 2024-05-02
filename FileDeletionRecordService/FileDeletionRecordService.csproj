@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -11,4 +11,8 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="set WixBinPath=C:\Program Files (x86)\WiX Toolset v3.14\bin  &#xD;&#xA;&quot;%25WixBinPath%25\heat.exe&quot; dir $(TargetDir) -dr INSTALLFOLDER -cg ProductComponents -var var.FileDeletionRecordServiceOutPutPath -out $(TargetDir)heat.wxs -gg -gl -sf -srd" />
+  </Target>
 </Project>
