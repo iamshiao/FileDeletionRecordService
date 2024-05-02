@@ -19,7 +19,7 @@
   <Fragment>
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
-        <Directory Id="INSTALLFOLDER" Name="FileDeletionRecordServiceSetup" />
+        <Directory Id="INSTALLFOLDER" Name="FileDeletionRecordService" />
       </Directory>
     </Directory>
   </Fragment>
