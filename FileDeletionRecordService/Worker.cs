@@ -3,11 +3,11 @@ namespace FileDeletionRecordService
     public sealed class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
-        private readonly JokeService _jokeService;
+        private readonly FileDeletionEventLogCollectService _logCollectSvc;
 
-        public Worker(JokeService jokeService, ILogger<Worker> logger)
+        public Worker(FileDeletionEventLogCollectService svc, ILogger<Worker> logger)
         {
-            _jokeService = jokeService;
+            _logCollectSvc = svc;
             _logger = logger;
         }
 
@@ -17,8 +17,7 @@ namespace FileDeletionRecordService
             {
                 while (!stoppingToken.IsCancellationRequested)
                 {
-                    string joke = _jokeService.GetJoke();
-                    _logger.LogWarning("{Joke}", joke);
+                    _logCollectSvc.CollectDeletionRecordFromSystemEventLog();
 
                     await Task.Delay(TimeSpan.FromSeconds(10), stoppingToken);
                 }
