@@ -7,12 +7,12 @@ IHost host = Host.CreateDefaultBuilder(args)
     {
         services.AddWindowsService(options =>
         {
-            options.ServiceName = ".NET Joke Service";
+            options.ServiceName = "FileDeletionRecordService";
         });
 
         LoggerProviderOptions.RegisterProviderOptions<EventLogSettings, EventLogLoggerProvider>(services);
 
-        services.AddSingleton<JokeService>();
+        services.AddSingleton<FileDeletionEventLogCollectService>();
         services.AddHostedService<Worker>();
     })
     .Build();
