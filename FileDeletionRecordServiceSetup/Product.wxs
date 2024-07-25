@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" 
+     xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension">
   <Product Id="*" Name="FileDeletionRecordServiceSetup" Language="1033" Version="1.0.0.0" Manufacturer="HP GIS" UpgradeCode="7ec63c63-ad12-4cc7-bf7e-138caa10380f">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
@@ -22,5 +23,14 @@
         <Directory Id="INSTALLFOLDER" Name="FileDeletionRecordService" />
       </Directory>
     </Directory>
+  </Fragment>
+
+  <Fragment>
+    <Component Id="cmpEventLog" Directory="INSTALLFOLDER">
+      <Util:EventSource
+       Name="FileDeletionRecordSource"
+       Log="FileDeletionRecordService"
+       EventMessageFile="%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\EventLogMessages.dll" />
+    </Component>
   </Fragment>
 </Wix>

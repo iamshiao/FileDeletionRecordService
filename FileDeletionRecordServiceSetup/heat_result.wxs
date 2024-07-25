@@ -7,139 +7,139 @@
     </Fragment>
     <Fragment>
         <ComponentGroup Id="ProductComponents">
-            <Component Id="cmpA0863526952F7834E7C922F065E4C8A8" Directory="INSTALLFOLDER" Guid="{D7BB5556-6AEC-4769-9431-1F82EB47487A}">
+            <Component Id="cmpA0863526952F7834E7C922F065E4C8A8" Directory="INSTALLFOLDER" Guid="{A44787F8-6A5D-4A8B-B4B0-6DC65C47B7A8}">
                 <File Id="filC04B02D0CCC2D5CCC1013B35DE86DB29" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\appsettings.Development.json" />
             </Component>
-            <Component Id="cmpF82FCA80BBAF44D285C97F10993DEEE6" Directory="INSTALLFOLDER" Guid="{9CF3CA22-9A57-4831-B598-BF273F0F6938}">
+            <Component Id="cmpF82FCA80BBAF44D285C97F10993DEEE6" Directory="INSTALLFOLDER" Guid="{E8A97318-D8BE-47D0-8D91-BE628AD5A073}">
                 <File Id="fil840B80AC19861C7F9F04FBDCFAE331CE" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\appsettings.json" />
             </Component>
-            <Component Id="cmp38287FBB0A63C0295DDBF069D5B53EF7" Directory="INSTALLFOLDER" Guid="{A3429D66-443A-475F-A370-84A47B0CAA45}">
+            <Component Id="cmp38287FBB0A63C0295DDBF069D5B53EF7" Directory="INSTALLFOLDER" Guid="{9789AA48-4557-4EF0-B31D-D369A573D449}">
                 <File Id="filA2E9D0DB67AA4674E2650EA599581A92" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\FileDeletionRecordService.deps.json" />
             </Component>
-            <Component Id="cmpB6BA154FE12BB784749DF1DFA2E46D2C" Directory="INSTALLFOLDER" Guid="{9DA1ABB0-298E-405E-98D8-41593529D02A}">
+            <Component Id="cmpB6BA154FE12BB784749DF1DFA2E46D2C" Directory="INSTALLFOLDER" Guid="{3547BBC4-1BE7-46AF-825D-79A0A9D27EEA}">
                 <File Id="fil108FC294C54C077C7FBE582280E0B6BE" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\FileDeletionRecordService.dll" />
             </Component>
-            <Component Id="cmp7563EF816178709F79ECEA99E87A2F51" Directory="INSTALLFOLDER" Guid="{32B9856F-8442-4996-B273-C3A1D204F62F}">
+            <Component Id="cmp7563EF816178709F79ECEA99E87A2F51" Directory="INSTALLFOLDER" Guid="{B8DD6C70-A390-4AA5-A26F-083829AD47A9}">
                 <File Id="filB08FB537E3E089D3BD944E3ECE664887" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\FileDeletionRecordService.exe" />
             </Component>
-            <Component Id="cmpC62540829930B9E5A014330636A8C363" Directory="INSTALLFOLDER" Guid="{775503D8-A281-4F41-BA49-7154E380200C}">
+            <Component Id="cmpC62540829930B9E5A014330636A8C363" Directory="INSTALLFOLDER" Guid="{675DACFE-F4AF-4465-A889-676B858E1B81}">
                 <File Id="fil283B27DE2845AA98AC0029D8C26767CD" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\FileDeletionRecordService.pdb" />
             </Component>
-            <Component Id="cmp56F1AC6B7EB2FF4DEB25853CD5FA5955" Directory="INSTALLFOLDER" Guid="{0EF9F7C0-54E8-4D25-8B5D-1103111F9BDB}">
+            <Component Id="cmp56F1AC6B7EB2FF4DEB25853CD5FA5955" Directory="INSTALLFOLDER" Guid="{49EFFDC0-AE0F-4DAF-8FF6-306BF34CD7A7}">
                 <File Id="fil38580691FEDC05DA1468E09ADF02C71F" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\FileDeletionRecordService.runtimeconfig.json" />
             </Component>
-            <Component Id="cmpAF82E8F35D0762DEAD87D0CD0E2EE19E" Directory="INSTALLFOLDER" Guid="{775D92E5-3ABC-4E13-B5E7-54319A0E176E}">
+            <Component Id="cmpAF82E8F35D0762DEAD87D0CD0E2EE19E" Directory="INSTALLFOLDER" Guid="{BADE11A7-32AE-4035-8DAB-FFB647DCC4D9}">
                 <File Id="fil5BCB3EE7CECB60E72091046251EF43B7" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\heat.wxs" />
             </Component>
-            <Component Id="cmpDC19BA21EFF423B27F8787A2AB8F2B3C" Directory="INSTALLFOLDER" Guid="{155B5954-9AB2-42C3-8431-9B1958B4F4C4}">
+            <Component Id="cmpDC19BA21EFF423B27F8787A2AB8F2B3C" Directory="INSTALLFOLDER" Guid="{43CA82B7-1709-4CCD-AD40-5C81008A898D}">
                 <File Id="filF6767F9D22B6D46DD3A2FC798B5F23DE" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Configuration.Abstractions.dll" />
             </Component>
-            <Component Id="cmp85A16DDDD438C8839C302EEFF54E8E0C" Directory="INSTALLFOLDER" Guid="{932BEE8F-A06B-4BAA-A96D-E77937B96211}">
+            <Component Id="cmp85A16DDDD438C8839C302EEFF54E8E0C" Directory="INSTALLFOLDER" Guid="{31C6723C-E468-4FED-8529-344E4FD15D53}">
                 <File Id="fil52FC3D526CBD9DC330C6FE3380563F0C" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Configuration.Binder.dll" />
             </Component>
-            <Component Id="cmp4A61E3F01E16F7C35D22D304DE7C3D7D" Directory="INSTALLFOLDER" Guid="{82A32D51-8D20-4191-8B0E-672D0EE3F13D}">
+            <Component Id="cmp4A61E3F01E16F7C35D22D304DE7C3D7D" Directory="INSTALLFOLDER" Guid="{E8F91033-36AE-40F4-B782-AB2DE7CED06C}">
                 <File Id="filB3B34A4CDA6A327AC31CAD64389BC80C" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Configuration.CommandLine.dll" />
             </Component>
-            <Component Id="cmpC2B3CC4C105FBF588A9EBBD45742C349" Directory="INSTALLFOLDER" Guid="{5251CAB4-C395-414A-B7EB-C45E8FC97F0B}">
+            <Component Id="cmpC2B3CC4C105FBF588A9EBBD45742C349" Directory="INSTALLFOLDER" Guid="{1917BD23-4996-42D7-8673-FC3E04E6B306}">
                 <File Id="filE9F345539532616C2BEF86BE1CEB83E2" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Configuration.dll" />
             </Component>
-            <Component Id="cmp695DF09F0E9EE30558F8C6D16553F843" Directory="INSTALLFOLDER" Guid="{F9BAAD72-1F74-4F27-82CC-6E577721EF38}">
+            <Component Id="cmp695DF09F0E9EE30558F8C6D16553F843" Directory="INSTALLFOLDER" Guid="{425D30D9-EBE0-44E4-87DC-85302ABAC202}">
                 <File Id="filEAA27D91AD78E3FCD8BA846C92752BAA" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" />
             </Component>
-            <Component Id="cmp0F72FDFC2B5DABBEED0952957424C516" Directory="INSTALLFOLDER" Guid="{06CE2834-BCB0-4154-B9FD-E516D669089E}">
+            <Component Id="cmp0F72FDFC2B5DABBEED0952957424C516" Directory="INSTALLFOLDER" Guid="{31C1F356-4C4E-4BA9-9C20-9CAAD7E86558}">
                 <File Id="fil732B9D1BB8B2BA629B3802CB721B7E55" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Configuration.FileExtensions.dll" />
             </Component>
-            <Component Id="cmp191446DEBB621CC91C2B2E713F085F01" Directory="INSTALLFOLDER" Guid="{98A174CB-86C3-49E8-9211-8631B7DB1F68}">
+            <Component Id="cmp191446DEBB621CC91C2B2E713F085F01" Directory="INSTALLFOLDER" Guid="{49749867-3721-4796-BAA9-0BDEE9301D7B}">
                 <File Id="fil0CC9532B169036B73874B81A5F9C8F97" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Configuration.Json.dll" />
             </Component>
-            <Component Id="cmp306F083BB44F8AEA42DD7E2AB9CD82C2" Directory="INSTALLFOLDER" Guid="{C3EFCA92-9548-4DE1-8B10-740B98A12812}">
+            <Component Id="cmp306F083BB44F8AEA42DD7E2AB9CD82C2" Directory="INSTALLFOLDER" Guid="{E9802A99-397C-4983-A368-4BECB56A6E28}">
                 <File Id="fil867F166CDED00C699F6B217A4FC42957" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Configuration.UserSecrets.dll" />
             </Component>
-            <Component Id="cmp198468A4AE980CD6955CB6EB86083726" Directory="INSTALLFOLDER" Guid="{264BFD6C-52D9-4272-9EDF-EFB296A4E765}">
+            <Component Id="cmp198468A4AE980CD6955CB6EB86083726" Directory="INSTALLFOLDER" Guid="{E9C51BB2-F37D-4597-8E65-F29F418CEDC6}">
                 <File Id="fil02E4E4D119BFC4831CEA5A71F1288443" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
             </Component>
-            <Component Id="cmp493E9BC44885B6BC5C57BDB1302C40D9" Directory="INSTALLFOLDER" Guid="{27EF9F14-328E-4D47-A406-874B2B08B9F8}">
+            <Component Id="cmp493E9BC44885B6BC5C57BDB1302C40D9" Directory="INSTALLFOLDER" Guid="{C51F0C96-F33D-4587-8CCD-C73BC8C45A44}">
                 <File Id="filA40291A4FBD4719B6995DEB783A39A65" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.DependencyInjection.dll" />
             </Component>
-            <Component Id="cmpD71177CD3BCD768F1F74211E6E2E353D" Directory="INSTALLFOLDER" Guid="{6A1CEAB5-22E0-4305-AB9A-31835C92D735}">
+            <Component Id="cmpD71177CD3BCD768F1F74211E6E2E353D" Directory="INSTALLFOLDER" Guid="{E7D4170A-5831-4E95-A95E-10F23D9C9685}">
                 <File Id="filD6E38AF71AD3567AEFAB7A283BC7D3C6" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Diagnostics.Abstractions.dll" />
             </Component>
-            <Component Id="cmpBB58932E81784E90600A3B2DEB2E2D6A" Directory="INSTALLFOLDER" Guid="{837619ED-B2FC-4714-9DAC-C70975008994}">
+            <Component Id="cmpBB58932E81784E90600A3B2DEB2E2D6A" Directory="INSTALLFOLDER" Guid="{480508B5-75E2-442A-9966-BDF63D5D14D5}">
                 <File Id="filBFD8FDE91AE486857624064B5808A0C1" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Diagnostics.dll" />
             </Component>
-            <Component Id="cmp0209E8308C907CAD5474151F7C6836F5" Directory="INSTALLFOLDER" Guid="{A8DF03C5-F8F4-49FE-B07E-AD05E709C35D}">
+            <Component Id="cmp0209E8308C907CAD5474151F7C6836F5" Directory="INSTALLFOLDER" Guid="{9CA2B3CB-07FF-412B-9E19-1CD30DAC0AE1}">
                 <File Id="fil1036FDFADEB4E1F1FB133485A70A0DD4" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.FileProviders.Abstractions.dll" />
             </Component>
-            <Component Id="cmp6361EE614B62630DD923390326EAF03C" Directory="INSTALLFOLDER" Guid="{D7CBB033-946B-4047-B8D8-B57456E84112}">
+            <Component Id="cmp6361EE614B62630DD923390326EAF03C" Directory="INSTALLFOLDER" Guid="{0D5F0ACF-20B2-4CCA-95FD-9F239527C4E3}">
                 <File Id="fil1B3C0C67DC448F84DA45630529031E78" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.FileProviders.Physical.dll" />
             </Component>
-            <Component Id="cmp1E5A63B6F657DD090469973A1C3D2C59" Directory="INSTALLFOLDER" Guid="{FC710A94-470A-4546-B94B-93C821582BDC}">
+            <Component Id="cmp1E5A63B6F657DD090469973A1C3D2C59" Directory="INSTALLFOLDER" Guid="{1B2D4431-15EC-4BE7-A51C-A0645EA2392A}">
                 <File Id="fil931DDF3633F4CABF1422600B672C70DE" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.FileSystemGlobbing.dll" />
             </Component>
-            <Component Id="cmpB96239F931804879A085E057C6E72657" Directory="INSTALLFOLDER" Guid="{BB125F6F-0DA9-40B1-898F-7F44998A2FAA}">
+            <Component Id="cmpB96239F931804879A085E057C6E72657" Directory="INSTALLFOLDER" Guid="{B2634940-3F15-4F1E-8A74-977EDC10BFCE}">
                 <File Id="filFE47041DFF0F714E6C7D801D2D2C140A" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Hosting.Abstractions.dll" />
             </Component>
-            <Component Id="cmp1ED5B5DCD1725E69F71E98865BCEAAB9" Directory="INSTALLFOLDER" Guid="{E36DB953-2661-481B-BDCD-F9B23D23F518}">
+            <Component Id="cmp1ED5B5DCD1725E69F71E98865BCEAAB9" Directory="INSTALLFOLDER" Guid="{2781057C-836E-4356-B0E4-593FE6CFF1E7}">
                 <File Id="filD0586081609434942EDB53299EF52D71" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Hosting.dll" />
             </Component>
-            <Component Id="cmpFD16E629F3B1C17887ACD3B97583CB13" Directory="INSTALLFOLDER" Guid="{F327F0BF-FB56-43BF-A304-EAE44A02444F}">
+            <Component Id="cmpFD16E629F3B1C17887ACD3B97583CB13" Directory="INSTALLFOLDER" Guid="{D3CC6900-42BD-4655-AFBE-FD268143B2A8}">
                 <File Id="filEFB595E81CA62CF58EF39208C76F7F06" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Hosting.WindowsServices.dll" />
             </Component>
-            <Component Id="cmp8C674FD6A69988A60A77A4CEE0F53781" Directory="INSTALLFOLDER" Guid="{D610CAE4-2D22-460D-A30F-3E47B11BC0E2}">
+            <Component Id="cmp8C674FD6A69988A60A77A4CEE0F53781" Directory="INSTALLFOLDER" Guid="{E4984E6E-3F2B-46CB-9853-2A09B473EBAE}">
                 <File Id="fil72342637E9F74EE945317D4603CEBA2F" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Logging.Abstractions.dll" />
             </Component>
-            <Component Id="cmp9B211F39744547E733F9040027FF1A3B" Directory="INSTALLFOLDER" Guid="{DE32C0FD-7168-4384-8241-2BB6C53088CC}">
+            <Component Id="cmp9B211F39744547E733F9040027FF1A3B" Directory="INSTALLFOLDER" Guid="{D30E11C7-906C-4AB0-8AEE-E5F7A246F8EC}">
                 <File Id="filC6D4BDB43CC150D24C5E1BDE9EB552F7" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Logging.Configuration.dll" />
             </Component>
-            <Component Id="cmp60BA3AB6448C5A0208FEDA4F886EDDE8" Directory="INSTALLFOLDER" Guid="{E59B5A20-58FA-44D7-BCDF-8D2CB37E3D28}">
+            <Component Id="cmp60BA3AB6448C5A0208FEDA4F886EDDE8" Directory="INSTALLFOLDER" Guid="{BF23C542-FF32-4935-B0F1-948D251C9D16}">
                 <File Id="filA347F900C2828DE2F50C35BDA8F5CE44" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Logging.Console.dll" />
             </Component>
-            <Component Id="cmp591239506CAB75D331DE5D90D6713057" Directory="INSTALLFOLDER" Guid="{18E8296A-8ACE-4851-B0BC-82B6383D831C}">
+            <Component Id="cmp591239506CAB75D331DE5D90D6713057" Directory="INSTALLFOLDER" Guid="{2EF803F8-A16C-42AC-AA5F-7F9924577637}">
                 <File Id="fil1CB90B4A15160F351B5EB5D2DED1B050" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Logging.Debug.dll" />
             </Component>
-            <Component Id="cmp835034F744990576E31C2DBC7C9293BF" Directory="INSTALLFOLDER" Guid="{B34A18B6-602F-47EB-9F55-0AE8670A96D4}">
+            <Component Id="cmp835034F744990576E31C2DBC7C9293BF" Directory="INSTALLFOLDER" Guid="{B560D67A-5EE4-4ABE-AB9D-7B5A5CC5CFB5}">
                 <File Id="fil71DD299EE7649E964200A4127797D1C0" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Logging.dll" />
             </Component>
-            <Component Id="cmp3D087D80699D13BCB013A8533A2C0DCF" Directory="INSTALLFOLDER" Guid="{8F94E7F5-1FC8-4454-BB71-4DA2D05913AD}">
+            <Component Id="cmp3D087D80699D13BCB013A8533A2C0DCF" Directory="INSTALLFOLDER" Guid="{905D3D66-C519-4B5B-8410-306AB5C045A9}">
                 <File Id="filA050696110EF79DCA5E76B6513E54FB2" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Logging.EventLog.dll" />
             </Component>
-            <Component Id="cmp63493859708989EE0F11F5DF7347E61A" Directory="INSTALLFOLDER" Guid="{F6CD3B83-44F6-4C7E-A8DD-319DBA032ADA}">
+            <Component Id="cmp63493859708989EE0F11F5DF7347E61A" Directory="INSTALLFOLDER" Guid="{584D6AF6-A924-4F4C-B573-1BAD9C9CCEE4}">
                 <File Id="filBF2F378F474FFE2ABA30A373F8BB00C0" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Logging.EventSource.dll" />
             </Component>
-            <Component Id="cmpF5D2F2D913749765205DC918BD981CD0" Directory="INSTALLFOLDER" Guid="{249BBA61-2EBF-4195-82B0-AA62D8E7558D}">
+            <Component Id="cmpF5D2F2D913749765205DC918BD981CD0" Directory="INSTALLFOLDER" Guid="{8662AC62-133A-4949-8A43-EB6746040566}">
                 <File Id="fil3F5CF8D11C3311A25D3082B99A709528" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
             </Component>
-            <Component Id="cmp3279C150AE8DF554FD7EEE2085672A2B" Directory="INSTALLFOLDER" Guid="{468B42C8-DF6D-430B-BB56-CDD50AA2D10B}">
+            <Component Id="cmp3279C150AE8DF554FD7EEE2085672A2B" Directory="INSTALLFOLDER" Guid="{12806FEB-F330-442E-8153-F0AFD227B605}">
                 <File Id="filA8D1F5D61FD7BC25099F707CBF5B1F24" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Options.dll" />
             </Component>
-            <Component Id="cmp946145B53A7DCDFA822B0EFD2314FAB6" Directory="INSTALLFOLDER" Guid="{E139B120-2C90-46AB-B7F2-D8F85A184625}">
+            <Component Id="cmp946145B53A7DCDFA822B0EFD2314FAB6" Directory="INSTALLFOLDER" Guid="{6FA96145-6065-4BB5-A38E-4232F56864C6}">
                 <File Id="fil773F29942324AAB2A7E1977E1AC63609" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\Microsoft.Extensions.Primitives.dll" />
             </Component>
-            <Component Id="cmpE722E076AB8486E4A4F24B01268787A2" Directory="INSTALLFOLDER" Guid="{661E7452-F562-4FD9-936F-0CFFFB0216B7}">
+            <Component Id="cmpE722E076AB8486E4A4F24B01268787A2" Directory="INSTALLFOLDER" Guid="{ACA0DF35-5348-4D6A-992C-2EF080DA7D7A}">
                 <File Id="fil92FE767CE7126933F4E9DEEEBAAE9354" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\System.Diagnostics.DiagnosticSource.dll" />
             </Component>
-            <Component Id="cmp28DA583D03D243568B9E8D67E28DC03E" Directory="INSTALLFOLDER" Guid="{284DDBCD-EF28-4B68-98CA-02F432CC548C}">
+            <Component Id="cmp28DA583D03D243568B9E8D67E28DC03E" Directory="INSTALLFOLDER" Guid="{15127485-8129-4EC4-A198-4C07689A22FE}">
                 <File Id="fil7F8EC318E9E8F0F09CC7C081378B6293" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\System.Diagnostics.EventLog.dll" />
             </Component>
-            <Component Id="cmp3C5190B580EDFB87D0BC5E835BB950DE" Directory="INSTALLFOLDER" Guid="{99870837-D413-4D7F-ACBF-5DD199F0660C}">
+            <Component Id="cmp3C5190B580EDFB87D0BC5E835BB950DE" Directory="INSTALLFOLDER" Guid="{6115F815-B533-45CC-AD3F-5DE6FEA2D924}">
                 <File Id="fil0B6369FF78F990F18A525D5F0CC6D1AB" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\System.ServiceProcess.ServiceController.dll" />
             </Component>
-            <Component Id="cmpB8A7E5BEDFB4B8D0CC7AF759CF02E85C" Directory="INSTALLFOLDER" Guid="{DA2BB4F5-59FB-46EC-8167-1BA0049DBA33}">
+            <Component Id="cmpB8A7E5BEDFB4B8D0CC7AF759CF02E85C" Directory="INSTALLFOLDER" Guid="{73DDD100-705B-42A2-8C94-D914D62D4E39}">
                 <File Id="filA40308264694C0D9CFCDD77B25AB3F6A" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\System.Text.Encodings.Web.dll" />
             </Component>
-            <Component Id="cmpA5817A2BB296EF3C39CAFA8A07CD6B59" Directory="INSTALLFOLDER" Guid="{93E5FEDB-0D2E-43D7-84D0-5E7AF0D89FE5}">
+            <Component Id="cmpA5817A2BB296EF3C39CAFA8A07CD6B59" Directory="INSTALLFOLDER" Guid="{806A845B-F2C2-4E04-BDBE-24FA3A45A68E}">
                 <File Id="fil1FBF587862F484BB82A1D65565F935B6" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\System.Text.Json.dll" />
             </Component>
-            <Component Id="cmpB49F7A4603EE06DB7D164668EA68948A" Directory="dirB849DFD7058DC98990C16E170041F248" Guid="{60C9D125-91E1-4EBD-905A-0219A17B25F5}">
+            <Component Id="cmpB49F7A4603EE06DB7D164668EA68948A" Directory="dirB849DFD7058DC98990C16E170041F248" Guid="{5F088AD0-C803-4BCD-9E08-12A09972D8C3}">
                 <File Id="fil35BA36F5FFB7724E55DDB8F07382D939" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll" />
             </Component>
-            <Component Id="cmp44BD5C41BA7B94C881AFA5217981EAE4" Directory="dir9BB0B260BBA5033E79CCD59197EFEB1D" Guid="{D76532B0-A75B-4EF0-A3C1-45A3D3659E3C}">
+            <Component Id="cmp44BD5C41BA7B94C881AFA5217981EAE4" Directory="dir9BB0B260BBA5033E79CCD59197EFEB1D" Guid="{A8CD13FF-B230-472A-AAA2-5771BEFF85E1}">
                 <File Id="filF28C6E3BE1632EE29B4711FDEA93FC13" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll" />
             </Component>
-            <Component Id="cmpA654941D69CEC0A9DB57BFBC601159F9" Directory="dir9BB0B260BBA5033E79CCD59197EFEB1D" Guid="{505FDD99-4E03-4601-9764-2930B0D534F4}">
+            <Component Id="cmpA654941D69CEC0A9DB57BFBC601159F9" Directory="dir9BB0B260BBA5033E79CCD59197EFEB1D" Guid="{D5F0875D-303D-4D05-B9B3-E0B22BA35730}">
                 <File Id="fil522A88635BD4C7D7BEA0DE37C8795F69" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll" />
             </Component>
-            <Component Id="cmp389DF905B07EF804DAD06AE99C4446B0" Directory="dir9BB0B260BBA5033E79CCD59197EFEB1D" Guid="{C5E9FC3F-91C8-4BFA-B96B-A02709E097EC}">
+            <Component Id="cmp389DF905B07EF804DAD06AE99C4446B0" Directory="dir9BB0B260BBA5033E79CCD59197EFEB1D" Guid="{2354D681-DD79-4E42-9E48-142012DF7730}">
                 <File Id="filF53A9A4870E1BE52E36AE55EFBAAA227" KeyPath="yes" Source="$(var.FileDeletionRecordServiceOutPutPath)\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll" />
             </Component>
         </ComponentGroup>
