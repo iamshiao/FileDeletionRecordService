@@ -26,6 +26,23 @@
   </Fragment>
 
   <Fragment>
+    <Component Id="svcInstallation" Directory="INSTALLFOLDER">
+      <File Id="FileDeletionRecordServiceEXE" Source="FileDeletionRecordService.exe"  KeyPath="yes"/>
+      <ServiceInstall
+        Id="ServiceInstaller"
+        Type="ownProcess"
+        Name="FileDeletionRecordService"
+        DisplayName="FileDeletionRecordService"
+        Description="Record file deletion for specified directory"
+        Start="auto"
+        Account="NT AUTHORITY\LocalService"
+        ErrorControl="normal"
+      />
+      <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="FileDeletionRecordService" Wait="yes" />
+    </Component>
+  </Fragment>
+
+  <Fragment>
     <Component Id="cmpEventLog" Directory="INSTALLFOLDER">
       <Util:EventSource
        Name="FileDeletionRecordSource"
