@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" 
-     xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
   <Product Id="*" Name="FileDeletionRecordServiceSetup" Language="1033" Version="1.0.0.0" Manufacturer="HP GIS" UpgradeCode="7ec63c63-ad12-4cc7-bf7e-138caa10380f">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
-
+    <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR"/>
+    <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR64"/>
+    <PropertyRef Id="NETFRAMEWORK40CLIENTINSTALLROOTDIR"/>
+    <PropertyRef Id="NETFRAMEWORK40CLIENTINSTALLROOTDIR64"/>
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
     <MediaTemplate EmbedCab="yes" />
 
@@ -24,13 +28,62 @@
       </Directory>
     </Directory>
   </Fragment>
-
   <Fragment>
+    <ComponentGroup Id="EventLog" Directory="INSTALLFOLDER">
+      <!-- Event Source creation for 32bit OS with .NET 4 Full-->
+      <Component Id="CreateEventSource32BitFullNet4" Guid="13fb5023-1a83-4794-b0af-76228d99ffd0">
+        <Condition><![CDATA[NETFRAMEWORK40FULLINSTALLROOTDIR AND NOT VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="FileDeletionRecordSource"
+              Log="FileDeletionRecordService"
+              EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR]EventLogMessages.dll"/>
+      </Component>
+
+      <!-- Event Source creation for 32bit OS with .NET 4 Client Profile-->
+      <Component Id="CreateEventSource32BitClientNet4" Guid="bf055360-6afc-4eef-9f57-87d5746a6e7b">
+        <Condition><![CDATA[NETFRAMEWORK40CLIENTINSTALLROOTDIR AND NOT VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+          xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+          Name="FileDeletionRecordSource"
+          Log="FileDeletionRecordService"
+          EventMessageFile="[NETFRAMEWORK40CLIENTINSTALLROOTDIR]EventLogMessages.dll"/>
+      </Component>
+      <!-- Event Source creation for 64bit OS with .NET 4 Full -->
+      <Component Id="CreateEventSource64BitFullNet4" Guid="d10ee32d-526b-4084-9754-08b24b138010">
+        <Condition><![CDATA[NETFRAMEWORK40FULLINSTALLROOTDIR64 AND VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="FileDeletionRecordSource"
+              Log="FileDeletionRecordService"
+              EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR64]EventLogMessages.dll"/>
+      </Component>
+
+      <!-- Event Source creation for 64bit OS with .NET 4 Client Profile -->
+      <Component Id="CreateEventSource64BitClientNet4" Guid="d1ffccdb-82da-4a13-bef5-461cd1eade67">
+        <Condition><![CDATA[NETFRAMEWORK40CLIENTINSTALLROOTDIR64 AND VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="FileDeletionRecordSource"
+              Log="FileDeletionRecordService"
+              EventMessageFile="[NETFRAMEWORK40CLIENTINSTALLROOTDIR64]EventLogMessages.dll"/>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  <!--<Fragment>
     <Component Id="cmpEventLog" Directory="INSTALLFOLDER">
       <Util:EventSource
        Name="FileDeletionRecordSource"
        Log="FileDeletionRecordService"
        EventMessageFile="%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\EventLogMessages.dll" />
     </Component>
-  </Fragment>
+  </Fragment>-->
 </Wix>
