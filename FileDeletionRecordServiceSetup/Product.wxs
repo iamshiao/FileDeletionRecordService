@@ -3,12 +3,14 @@
      xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension">
   <Product Id="*" Name="FileDeletionRecordServiceSetup" Language="1033" Version="1.0.0.0" Manufacturer="HP GIS" UpgradeCode="7ec63c63-ad12-4cc7-bf7e-138caa10380f">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+    <?define INSTALLPATH = "C:\Users\hsiaoc.AUTH\source\repos\iamshiao\FileDeletionRecordService\FileDeletionRecordService\bin\Release\net6.0\"?>
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
     <MediaTemplate EmbedCab="yes" />
 
     <Feature Id="ProductFeature" Title="FileDeletionRecordServiceSetup" Level="1">
       <ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id='svcComponents' />
     </Feature>
 
     <UI>
@@ -25,9 +27,10 @@
     </Directory>
   </Fragment>
 
-  <Fragment>
-    <Component Id="svcInstallation" Directory="INSTALLFOLDER">
-      <File Id="FileDeletionRecordServiceEXE" Source="FileDeletionRecordService.exe"  KeyPath="yes"/>
+ <Fragment>
+   <ComponentGroup Id='svcComponents' Directory="INSTALLFOLDER">
+    <!--<Component Id="svcInstallation" Guid="{05F58B9B-BC8F-44BD-A4D1-DB4B8F824111}">
+      <File Id="FileDeletionRecordServiceEXE" Source="$(var.INSTALLPATH)\FileDeletionRecordService.exe" />
       <ServiceInstall
         Id="ServiceInstaller"
         Type="ownProcess"
@@ -39,15 +42,14 @@
         ErrorControl="normal"
       />
       <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="FileDeletionRecordService" Wait="yes" />
-    </Component>
-  </Fragment>
+    </Component>-->
 
-  <Fragment>
-    <Component Id="cmpEventLog" Directory="INSTALLFOLDER">
+    <Component Id="cmpEventLog" Guid="{D15001E4-24F7-407E-977B-47A1B1F0B4B4}" KeyPath="yes" >
       <Util:EventSource
        Name="FileDeletionRecordSource"
        Log="FileDeletionRecordService"
        EventMessageFile="%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\EventLogMessages.dll" />
     </Component>
+   </ComponentGroup>
   </Fragment>
 </Wix>
