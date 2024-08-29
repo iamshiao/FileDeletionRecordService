@@ -46,8 +46,8 @@
 
       <Component Id="cmpEventLog" Guid="{D15001E4-24F7-407E-977B-47A1B1F0B4B4}" KeyPath="yes" >
         <Util:EventSource
-         Name="FileDeletionRecordService"
-         Log="FileDeletionRecordSource"
+         Name="FileDeletionRecordSource"
+         Log="FileDeletionRecordService"
          EventMessageFile="%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\EventLogMessages.dll" />
       </Component>
     </ComponentGroup>
