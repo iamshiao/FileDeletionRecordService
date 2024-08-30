@@ -10,10 +10,10 @@ namespace FileDeletionRecordService
 {
     public sealed class FileDeletionEventLogCollectService
     {
-        private readonly ILogger<Worker> _logger;
+        private readonly ILogger<TimedHostedService> _logger;
 
 
-        public FileDeletionEventLogCollectService(ILogger<Worker> logger)
+        public FileDeletionEventLogCollectService(ILogger<TimedHostedService> logger)
         {
             _logger = logger;
         }

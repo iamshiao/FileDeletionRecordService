@@ -13,7 +13,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         LoggerProviderOptions.RegisterProviderOptions<EventLogSettings, EventLogLoggerProvider>(services);
 
         services.AddSingleton<FileDeletionEventLogCollectService>();
-        services.AddHostedService<Worker>();
+        services.AddHostedService<TimedHostedService>();
     })
     .Build();
 

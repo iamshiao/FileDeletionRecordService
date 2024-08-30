@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>410e9ca8-b9d7-4a20-82eb-8ad0671ffda5</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>FileDeletionRecordServiceSetup</OutputName>
+    <OutputName>FileDeletionRecordService</OutputName>
     <OutputType>Package</OutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
