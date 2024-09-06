@@ -1,15 +1,22 @@
+using Microsoft.Extensions.Configuration;
+
 namespace FileDeletionRecordService
 {
     public sealed class TimedHostedService : IHostedService, IDisposable
     {
         private readonly ILogger<TimedHostedService> _logger;
         private readonly FileDeletionEventLogCollectService _logCollectSvc;
+        private readonly IConfiguration _configuration;
         private Timer _timer;
+        private readonly int _timerIntervalInSec;
 
-        public TimedHostedService(FileDeletionEventLogCollectService svc, ILogger<TimedHostedService> logger)
+        public TimedHostedService(FileDeletionEventLogCollectService svc, ILogger<TimedHostedService> logger, IConfiguration configuration)
         {
             _logCollectSvc = svc;
             _logger = logger;
+            _configuration = configuration;
+
+            _timerIntervalInSec = _configuration.GetValue<int>("AppConfig:TimerIntervalInSec");
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
@@ -17,7 +24,7 @@ namespace FileDeletionRecordService
             _logger.LogInformation("Timed Background Service is starting.");
 
             _timer = new Timer(DoWork, null, TimeSpan.Zero,
-                TimeSpan.FromSeconds(10));
+                TimeSpan.FromSeconds(_timerIntervalInSec));
 
             return Task.CompletedTask;
         }
